@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my charts</title>
+  <script src="./dist/mcharts.js"></script>
+  <style>
+    .test {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="test">
+
+  </div>
+</body>
+<script>
+  var mchartsInstance = mcharts.init(document.querySelector('.test'))
+  mchartsInstance.setOption({
+    series: {
+
+    },
+    grid: {
+      borderWidth: 20
+    }
+  })
+  // document.querySelector('.test')
+  console.log(mchartsInstance)
+</script>
+
+</html>
